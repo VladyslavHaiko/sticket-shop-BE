@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="" />
+    <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/regex.enum.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validators/admin/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validators/admin/new-admin.validtor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validators/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -43,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602618596429</updated>
-      <workItem from="1602618598365" duration="2351000" />
+      <workItem from="1602618598365" duration="6619000" />
     </task>
     <servers />
   </component>

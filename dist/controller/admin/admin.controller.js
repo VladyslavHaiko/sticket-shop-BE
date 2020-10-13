@@ -38,29 +38,31 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.adminController = exports.AdminController = void 0;
 var services_1 = require("../../services");
+var Joi = require("joi");
+var validators_1 = require("../../validators");
 var AdminController = /** @class */ (function () {
     function AdminController() {
     }
     AdminController.prototype.createAdmin = function (req, res, next) {
         return __awaiter(this, void 0, void 0, function () {
-            var admin, err_1;
+            var admin, error;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 2, , 3]);
                         admin = req.body;
+                        error = Joi.validate(admin, validators_1.newAdminValidator).error;
+                        if (error) {
+                            return [2 /*return*/, next(new Error(error.details[0].message))];
+                        }
                         //todo hash password
+                        //todo send email you is admin now
                         return [4 /*yield*/, services_1.adminService.createAdmin(admin)];
                     case 1:
                         //todo hash password
+                        //todo send email you is admin now
                         _a.sent();
                         res.json(admin);
-                        return [3 /*break*/, 3];
-                    case 2:
-                        err_1 = _a.sent();
-                        res.send(err_1.message);
-                        return [3 /*break*/, 3];
-                    case 3: return [2 /*return*/];
+                        return [2 /*return*/];
                 }
             });
         });
