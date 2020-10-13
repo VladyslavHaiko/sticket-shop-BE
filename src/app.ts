@@ -1,19 +1,21 @@
 import * as express from 'express';
+import {NextFunction, Request, Response} from 'express';
 import * as cors from 'cors';
 import * as rateLimit from 'express-rate-limit';
 import * as helmet from 'helmet';
 import * as dotenv from 'dotenv';
 import * as morgan from 'morgan';
 import * as path from 'path';
-// import * as mongoose from 'mongoose';
-
-import {NextFunction, Request, Response} from 'express';
+import * as mongoose from 'mongoose';
+import {config} from './config';
+import {adminRouter} from './routes';
 
 dotenv.config();
 
+//rateLimit configure
 const serverRequestLimit = rateLimit({
-    windowMs: 200,
-    max:  200
+    windowMs: config.serverRateLimits.period,
+    max: config.serverRateLimits.maxRequests
 });
 
 class App {
@@ -25,26 +27,35 @@ class App {
         this.app.use(helmet());
         this.app.use(serverRequestLimit);
         this.app.use(cors({
-            // origin: this.configureCors
+            origin: this.configureCors
         }));
 
         this.app.use(express.json());
-        this.app.use(express.urlencoded({extended: true}));
+        this.app.use(express.urlencoded(
+            {extended: true}));
 
-        this.app.use(express.static(path.resolve((global as any).appRoot, 'public')));
+        this.app.use(express.static(
+            path.resolve((global as any).appRoot,
+                'public')));
 
 
         this.app.use(this.customErrorHandler);
-
-        // this.setupDB();
+        this.mountRoutes();
+        this.setupDB();
     }
 
-    // private setupDB(): void {
-    //     mongoose.connect(config.MONGODB_URL, {useNewUrlParser: true});
-    //
-    //     mongoose.connection.on('error', console.log.bind(console, 'MONGO ERROR'));
-    // }
+    //setup mongo
+    private setupDB(): void {
+        mongoose.connect(config.MONGODB_URL, {
+            useUnifiedTopology: true,
+            useCreateIndex: true,
+            useNewUrlParser: true
+        });
 
+        mongoose.connection.on('error', console.log.bind(console, 'MONGO ERROR'));
+    }
+
+    //error handler
     private customErrorHandler(err: any, req: Request, res: Response, next: NextFunction): void {
         res
             .status(err.status || 500)
@@ -54,19 +65,23 @@ class App {
             });
     }
 
-    // private configureCors = (origin: any, callback: any) => {
-    //     const whiteList = config.ALLOWED_ORIGIN.split(';');
-    //
-    //     if (!origin) {
-    //         return callback(null, true);
-    //     }
-    //
-    //     if (!whiteList.includes(origin)) {
-    //         return callback(false, new Error('Cors not allowed'));
-    //     }
-    //
-    //     return callback(null, true);
-    // }
+    private configureCors = (origin: any, callback: any) => {
+        const whiteList = config.ALLOWED_ORIGIN.split(';');
+
+        if (!origin) {
+            return callback(null, true);
+        }
+
+        if (!whiteList.includes(origin)) {
+            return callback(false, new Error('Cors not allowed'));
+        }
+
+        return callback(null, true);
+    }
+
+    private mountRoutes(): void {
+        this.app.use(`/admin`, adminRouter);
+    }
 
 }
 

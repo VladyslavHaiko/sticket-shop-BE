@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/routes/admin/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,iDAA+B","sourcesContent":["export * from './admin.router';\n"]}

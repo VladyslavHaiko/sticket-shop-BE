@@ -1,11 +1,12 @@
 import * as http from 'http';
 
 import {app} from './app';
+import {config} from './config';
 
 const server = http.createServer(app);
 
-server.listen(3003, () => {
-    console.log(`Listen 3003`);
+server.listen(config.PORT, () => {
+    console.log(`Listen ${config.PORT}`);
 });
 
 process.on('SIGTERM', () => {
