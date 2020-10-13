@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/admin/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataBase/models/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/admin/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-    </list>
+    <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602618596429</updated>
-      <workItem from="1602618598365" duration="2033000" />
+      <workItem from="1602618598365" duration="2351000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,7 @@ export class AdminController {
     async createAdmin(req: Request, res: Response, next: NextFunction) {
         try {
             const admin = req.body;
+
             //todo hash password
             await adminService.createAdmin(admin);
             res.json(admin);
