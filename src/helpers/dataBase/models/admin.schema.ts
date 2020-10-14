@@ -1,6 +1,6 @@
 import {Document, model, Model, Schema} from 'mongoose';
 
-import {IAdmin} from '../../interface';
+import {IAdmin} from '../../../interface';
 
 export type AdminType = IAdmin & Document
 

@@ -1,4 +1,4 @@
-import {AdminModel} from '../../dataBase';
+import {AdminModel} from '../../helpers/dataBase';
 import {IAdmin} from '../../interface';
 
 class AdminService {
