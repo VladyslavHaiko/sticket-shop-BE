@@ -40,27 +40,32 @@ exports.adminController = exports.AdminController = void 0;
 var services_1 = require("../../services");
 var Joi = require("joi");
 var validators_1 = require("../../validators");
+var helpers_1 = require("../../helpers");
 var AdminController = /** @class */ (function () {
     function AdminController() {
     }
     AdminController.prototype.createAdmin = function (req, res, next) {
         return __awaiter(this, void 0, void 0, function () {
-            var admin, error;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            var admin, error, _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0:
                         admin = req.body;
                         error = Joi.validate(admin, validators_1.newAdminValidator).error;
                         if (error) {
                             return [2 /*return*/, next(new Error(error.details[0].message))];
                         }
+                        _a = admin;
+                        return [4 /*yield*/, helpers_1.hashData(admin.password)];
+                    case 1:
+                        _a.password = _b.sent();
                         //todo hash password
                         //todo send email you is admin now
                         return [4 /*yield*/, services_1.adminService.createAdmin(admin)];
-                    case 1:
+                    case 2:
                         //todo hash password
                         //todo send email you is admin now
-                        _a.sent();
+                        _b.sent();
                         res.json(admin);
                         return [2 /*return*/];
                 }

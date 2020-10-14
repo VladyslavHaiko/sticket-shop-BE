@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/regex.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validators/admin/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validators/admin/new-admin.validtor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validators/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/data-hasher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js.map" afterDir="false" />
@@ -54,7 +51,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602618596429</updated>
-      <workItem from="1602618598365" duration="6619000" />
+      <workItem from="1602618598365" duration="6777000" />
+      <workItem from="1602660221490" duration="1318000" />
+      <workItem from="1602666874322" duration="689000" />
     </task>
     <servers />
   </component>
@@ -67,6 +66,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="727" y="312" key="FileChooserDialogImpl" timestamp="1602663345823">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="727" y="312" key="FileChooserDialogImpl/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1602663345823" />
     <state x="629" y="280" width="662" height="548" key="find.popup" timestamp="1602620263112">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
