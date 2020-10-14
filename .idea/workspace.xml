@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/helpers/data-hasher.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/admin/admin.controller.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +48,7 @@
       <updated>1602618596429</updated>
       <workItem from="1602618598365" duration="6777000" />
       <workItem from="1602660221490" duration="1318000" />
-      <workItem from="1602666874322" duration="689000" />
+      <workItem from="1602666874322" duration="1017000" />
     </task>
     <servers />
   </component>

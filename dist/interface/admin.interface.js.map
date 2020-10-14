@@ -1,1 +1,0 @@
-{"version":3,"file":"admin.interface.js","sourceRoot":"","sources":["../../src/interface/admin.interface.ts"],"names":[],"mappings":"","sourcesContent":["export interface IAdmin {\n    name: string\n    email: string,\n    password: string,\n    status: boolean\n}\n"]}
