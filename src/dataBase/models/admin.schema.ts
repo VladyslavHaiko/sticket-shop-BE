@@ -1,8 +1,15 @@
 import {Document, model, Model, Schema} from 'mongoose';
 
-import {IAdmin} from '../../../interface';
+import {IAdmin} from '../../interface';
+import {TableNamesEnum} from '../../constants';
 
 export type AdminType = IAdmin & Document
+
+const tokenSubModel = {
+    token: String,
+    action: String
+};
+
 
 export const AdminSchema: Schema = new Schema<any>({
     name: {
@@ -25,7 +32,11 @@ export const AdminSchema: Schema = new Schema<any>({
     phone_number: {
         type: String,
         required: true
-    }
+    },
+    tokens: [tokenSubModel]
+},
+{
+    timestamps: true
 });
 
-export const AdminModel: Model<any> = model<AdminType>(`admin`, AdminSchema);
+export const AdminModel: Model<AdminType> = model<AdminType>(TableNamesEnum.ADMIN, AdminSchema);

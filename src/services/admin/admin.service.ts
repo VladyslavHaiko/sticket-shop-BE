@@ -1,11 +1,13 @@
-import {AdminModel} from '../../helpers/dataBase';
+import {AdminModel} from '../../dataBase';
 import {IAdmin} from '../../interface';
 
 class AdminService {
     createAdmin(admin: Partial<IAdmin>) {
-        const adminToCreate = new AdminModel(admin);
+        return new AdminModel(admin).save();
+    }
 
-        return adminToCreate.save();
+    findByEmail(params: Partial<IAdmin>): Promise<IAdmin | null> {
+        return AdminModel.findOne(params).exec();
     }
 }
 

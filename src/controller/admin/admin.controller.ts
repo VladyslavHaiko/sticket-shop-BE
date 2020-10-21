@@ -1,10 +1,9 @@
 import {NextFunction, Request, Response} from 'express';
 import * as Joi from 'joi';
 import {newAdminValidator} from '../../validators';
-import {adminService} from '../../services';
+import {adminService, emailService, logService} from '../../services';
 import {hashData} from '../../helpers';
-import {emailService} from '../../services/mail';
-import {ActionEnum} from '../../constants';
+import {ActionEnum, LogsEnum} from '../../constants';
 
 export class AdminController {
     async createAdmin(req: Request, res: Response, next: NextFunction) {
@@ -18,8 +17,8 @@ export class AdminController {
         //todo send email you is admin now
         await adminService.createAdmin(admin);
         await emailService.sendEmail(admin.email, ActionEnum.ADMIN_REGISTER, {email: admin.email});
-
-        res.json(admin);
+        await logService.createLog({event: LogsEnum.ADMIN_REGISTERED, adminId: 'superAdmin'});
+        res.send(admin);
     }
 }
 

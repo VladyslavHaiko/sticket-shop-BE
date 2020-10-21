@@ -24,7 +24,7 @@ module.exports = {
         'eol-last': 'error',
         'eqeqeq': 'error',
         'guard-for-in': 'error',
-        'indent': ['error', 4, {'SwitchCase': 2}],
+        'indent': ['error', 4, {'SwitchCase': 1}],
         'max-classes-per-file': 'off',
         'max-len': ['error', {'code': 140}],
         // "newline-per-chained-call": "error",
