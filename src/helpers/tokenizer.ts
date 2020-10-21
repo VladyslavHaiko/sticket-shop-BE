@@ -9,9 +9,8 @@ export const Tokenizer = (action: ActionEnum): { access_token: string, refresh_t
     switch (action) {
         case ActionEnum.ADMIN_LOGIN:
             access_token = jwt.sign({}, config.JWT_SECRET, {expiresIn: config.ACCESS_TOKEN_LIFETIME});
-            refresh_token = jwt.sign({}, config.JWT_SECRET, {expiresIn: config.ACCESS_TOKEN_LIFETIME});
+            refresh_token = jwt.sign({}, config.JWT_REFRESH_SECRET, {expiresIn: config.ACCESS_TOKEN_LIFETIME});
     }
-
 
     return {access_token, refresh_token};
 };

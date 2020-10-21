@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
-./dist
+./.idea/
+./dist/
 node_modules/
 dist/
 .env

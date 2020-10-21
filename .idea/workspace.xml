@@ -2,33 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/constants/logs.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/table-names.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataBase/models/logs.schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataBase/models/tokens.schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/errors/custom-errors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/errors/error-handler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/errors/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/tokenizer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interface/logs.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interface/tokens.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/admin/check-is-email-exist.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/admin/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/logs/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/logs/logs.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interface/extended-request.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/admin/check-is-admin-present.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/auth/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/dataBase/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataBase/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/dataBase/models/admin.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataBase/models/admin.schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/dataBase/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataBase/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataBase/models/tokens.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataBase/models/tokens.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/errors/custom-errors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/errors/custom-errors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/tokenizer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/tokenizer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interface/admin.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface/admin.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interface/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/admin/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/admin/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/admin/admin.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/admin.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/admin/admin.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/admin/admin.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -76,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/interface" />
       <recent name="$PROJECT_DIR$/src/middleware/admin" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/helpers" />
@@ -104,7 +93,9 @@
       <workItem from="1602766936278" duration="713000" />
       <workItem from="1602842001374" duration="2977000" />
       <workItem from="1603121455106" duration="650000" />
-      <workItem from="1603261074287" duration="6391000" />
+      <workItem from="1603261074287" duration="9286000" />
+      <workItem from="1603272647124" duration="761000" />
+      <workItem from="1603285285075" duration="4428000" />
     </task>
     <servers />
   </component>
@@ -137,10 +128,10 @@
     </state>
     <state x="629" y="280" width="662" height="548" key="find.popup/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1602755326990" />
     <state x="629" y="280" width="662" height="548" key="find.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1602620263112" />
-    <state x="624" y="253" key="run.anything.popup" timestamp="1602619970179">
+    <state x="624" y="253" key="run.anything.popup" timestamp="1603287297514">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="624" y="253" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1602619970179" />
+    <state x="624" y="253" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1603287297514" />
     <state x="623" y="260" key="search.everywhere.popup" timestamp="1602748247461">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
