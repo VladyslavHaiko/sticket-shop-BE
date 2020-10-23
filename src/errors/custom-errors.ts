@@ -10,8 +10,13 @@ export const customErrors = {
         code: 4001
     },
 
-    INVALID_PASSWORD:{
+    INVALID_PASSWORD: {
         message: 'invalid password',
         code: 4001
+    },
+
+    BAD_TOKEN: {
+        message: 'invalid token',
+        code: 4002
     }
 };

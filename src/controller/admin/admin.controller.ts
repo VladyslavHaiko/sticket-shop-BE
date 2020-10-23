@@ -2,7 +2,7 @@ import {NextFunction, Request, Response} from 'express';
 import * as Joi from 'joi';
 
 import {adminService, authService, emailService, logService} from '../../services';
-import {ActionEnum, LogsEnum, ResponseStatusCodesEnum} from '../../constants';
+import {ActionEnum, LogsEnum, RequestHeadersEnum, ResponseStatusCodesEnum} from '../../constants';
 import {IAdmin, IRequestExtended} from '../../interface';
 
 import {compareHashData, hashData} from '../../helpers';
@@ -52,6 +52,13 @@ export class AdminController {
         });
 
         res.json({access_token, refresh_token});
+    }
+
+    async logoutAdmin(req: Request, res: Response, next: NextFunction) {
+        const access_token = req.get(RequestHeadersEnum.AUTHORIZATION);
+        await authService.deleteTokens({access_token});
+        res.sendStatus(ResponseStatusCodesEnum.NO_CONTENT);
+
     }
 }
 

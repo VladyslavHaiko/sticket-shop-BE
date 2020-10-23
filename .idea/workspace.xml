@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interface/extended-request.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/admin/check-is-admin-present.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/auth/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/header.enum.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/token-checker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/admin/check-access-token.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataBase/models/tokens.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataBase/models/tokens.schema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/errors/custom-errors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/errors/custom-errors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/tokenizer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/tokenizer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interface/admin.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface/admin.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interface/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/admin/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/admin/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/admin/admin.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/admin.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth/auth.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +49,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -95,7 +95,11 @@
       <workItem from="1603121455106" duration="650000" />
       <workItem from="1603261074287" duration="9286000" />
       <workItem from="1603272647124" duration="761000" />
-      <workItem from="1603285285075" duration="4428000" />
+      <workItem from="1603285285075" duration="5391000" />
+      <workItem from="1603367450476" duration="1199000" />
+      <workItem from="1603445423460" duration="1228000" />
+      <workItem from="1603456655691" duration="1282000" />
+      <workItem from="1603458286836" duration="2308000" />
     </task>
     <servers />
   </component>
@@ -108,11 +112,16 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2590" y="59" width="565" height="587" key="FileChooserDialogImpl" timestamp="1602842174511">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="791" y="443" width="328" height="223" key="#ESLint" timestamp="1603459785167">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="791" y="443" width="328" height="223" key="#ESLint/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1603459785167" />
+    <state x="670" y="85" width="565" height="587" key="FileChooserDialogImpl" timestamp="1603290343272">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="670" y="85" width="565" height="587" key="FileChooserDialogImpl/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1602762419768" />
     <state x="2590" y="59" key="FileChooserDialogImpl/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602842174511" />
+    <state x="670" y="85" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1603290343272" />
     <state x="376" y="57" width="910" height="732" key="SettingsEditor" timestamp="1602756214503">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>

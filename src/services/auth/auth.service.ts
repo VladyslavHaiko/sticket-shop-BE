@@ -8,18 +8,19 @@ class AuthService {
         return tokensToCreate.save();
     }
 
-    async findUserByToken(findObject: { accessToken?: string, refreshToken?: string }): Promise<IAdmin | null> {
+    async findUserByToken(findObject: { access_token?: string, refresh_token?: string }): Promise<IAdmin | null> {
         const tokenAndUser = await TokensModel
             .findOne(findObject)
-            .populate('userId')
-            .select({userId: 1, _id: 0}) as any;
+            .populate('admin_id')
+            .select({admin_id: 1, _id: 0}) as any;
 
-        return tokenAndUser?.userId?.toJSON();
+        return tokenAndUser?.admin_id?.toJSON();
     }
 
-    // removeToken(removeObject: { accessToken?: string, refreshToken?: string }): Promise<IAccessToken | null> {
-    //     return AccessTokenModel.findOneAndDelete(removeObject).exec();
-    // }
+    deleteTokens(removeObject: { access_token?: string, refresh_token?: string }): Promise<IToken | null> {
+
+        return TokensModel.findOneAndDelete(removeObject).exec();
+    }
 }
 
 export const authService = new AuthService();
