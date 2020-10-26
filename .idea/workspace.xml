@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e1c8aa-84db-4b5a-ba25-27c871edafbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/logs.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/logs.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/admin/admin.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/admin/check-access-token.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/admin/check-access-token.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../фів" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -91,6 +93,9 @@
       <workItem from="1603445423460" duration="1228000" />
       <workItem from="1603456655691" duration="1282000" />
       <workItem from="1603458286836" duration="2492000" />
+      <workItem from="1603701614655" duration="5728000" />
+      <workItem from="1603722453729" duration="1474000" />
+      <workItem from="1603745403792" duration="15000" />
     </task>
     <servers />
   </component>
@@ -107,12 +112,12 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="791" y="443" width="328" height="223" key="#ESLint/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1603459785167" />
-    <state x="670" y="85" width="565" height="587" key="FileChooserDialogImpl" timestamp="1603290343272">
+    <state x="670" y="85" width="565" height="587" key="FileChooserDialogImpl" timestamp="1603745416768">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="670" y="85" width="565" height="587" key="FileChooserDialogImpl/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1602762419768" />
     <state x="2590" y="59" key="FileChooserDialogImpl/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602842174511" />
-    <state x="670" y="85" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1603290343272" />
+    <state x="670" y="85" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1603745416768" />
     <state x="376" y="57" width="910" height="732" key="SettingsEditor" timestamp="1602756214503">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -128,9 +133,10 @@
     </state>
     <state x="629" y="280" width="662" height="548" key="find.popup/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1602755326990" />
     <state x="629" y="280" width="662" height="548" key="find.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1602620263112" />
-    <state x="624" y="253" key="run.anything.popup" timestamp="1603287297514">
+    <state x="624" y="253" key="run.anything.popup" timestamp="1603704679043">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
+    <state x="624" y="253" key="run.anything.popup/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1603704679043" />
     <state x="624" y="253" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1603287297514" />
     <state x="623" y="260" key="search.everywhere.popup" timestamp="1602748247461">
       <screen x="0" y="28" width="1920" height="1052" />

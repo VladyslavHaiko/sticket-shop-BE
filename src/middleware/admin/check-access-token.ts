@@ -9,7 +9,6 @@ import {tokenChecker} from '../../helpers';
 export const checkAccessToken = async (req: IRequestExtended, res: Response, next: NextFunction): Promise<void> => {
     try {
         const token = req.get(RequestHeadersEnum.AUTHORIZATION);
-
         if (!token) {
             return next(new ErrorHandler(
                 ResponseStatusCodesEnum.BAD_REQUEST,
@@ -19,17 +18,20 @@ export const checkAccessToken = async (req: IRequestExtended, res: Response, nex
 
         await tokenChecker(token);
 
-        const userByToken = await authService.findUserByToken({access_token: token});
+        const adminByToken = await authService.findUserByToken({access_token: token});
 
-        if (!userByToken) {
+        if (!adminByToken) {
             return next(new ErrorHandler(
                 ResponseStatusCodesEnum.NOT_FOUND,
                 customErrors.BAD_TOKEN.message)
             );
         }
 
+        req.admin = adminByToken;
+
         next();
+    } catch (e) {
+        next(e);
     }
-    catch (e) {next(e);}
 
 };
